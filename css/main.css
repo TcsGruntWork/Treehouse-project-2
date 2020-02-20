@@ -1,0 +1,218 @@
+/*Font import */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* CSS Resets */
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width:100%;
+  display:block;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* containers */
+.container {
+  width:90%;
+  padding:0.2rem;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+body {
+  line-height:1.5;
+  color:#333;
+  font-family: 'Lato', sans-serif;
+}
+/* header styles */
+.main-header {
+  background-color:#dbdbdb;
+  text-align: center;
+  padding:1.5rem 0;
+}
+
+.main-heading {
+  padding:0.5rem 0;
+  font-size:2.2rem;
+}
+
+.main-nav {
+  margin-bottom:2rem;
+}
+
+.main-nav ul li a {
+  display:block;
+  padding:0.5rem;
+  margin-bottom:0.5rem;
+  font-size:1.1rem;
+  font-weight:bold;
+  background-color:#fff;
+  color:#333;
+  text-transform: uppercase;
+}
+a:hover,
+.main-nav ul li a:hover {
+  color:#2f3f9c;
+}
+
+.profile-pic {
+  padding-bottom:1rem;
+}
+
+.head-info-text {
+  font-size:1.2rem;
+}
+/* header styles end */
+
+.sub-heading {
+  text-align: center;
+  text-transform: uppercase;
+  margin:2rem 0;
+}
+/* main styles  */
+.card {
+  text-align: center;
+  font-size:1.2rem;
+  color:#333;
+}
+
+.card-heading {
+  margin:1rem 0;
+}
+
+.card-text {
+  padding:0.8rem 0;
+}
+
+/* footer styles */
+footer {
+  background-color:#dbdbdb;
+  text-align: center;
+  font-size:1.2rem;
+  padding:0 0.8rem;
+}
+
+.footer-heading {
+  padding:2rem 0;
+}
+
+.footer-text {
+  width:25rem;
+  margin:0 auto;
+  margin-bottom:1rem;
+}
+
+.phone,
+.email {
+  margin-bottom:1rem;
+}
+.phone span,
+.email span {
+  padding-right:1rem;
+}
+.student,
+.top-link {
+  display:block;
+  padding:1rem;
+  color:#333;
+  font-weight:bold;
+}
+
+.student span,
+.top-link span {
+  font-weight:bold;
+}
+.student {
+  float:left;
+}
+
+.top-link {
+  float:right;
+}
+
+.footer-nav {
+  display: none;
+}
+
+/* media queries */
+@media(min-width:768px) {
+  .main-nav ul li{
+    display: inline-block;
+    margin-right:1rem;
+  }
+  .main-nav ul li a {
+    background-color:#dbdbdb;
+  }
+  .profile-pic,
+  .head-info-text {
+    width:50%;
+    float:right;
+  }
+  .head-info-text {
+    padding-right:1rem;
+    margin-top:1rem;
+  }
+  .card {
+    width:48%;
+    float:left;
+    margin-right:2%;
+  }
+  .top-link {
+    display:none
+  }
+  .footer-nav {
+    display:block;
+    float:right;
+    padding-top:1rem;
+  }
+  .footer-nav li {
+    float:left;
+    margin-right:1rem;
+  }
+
+  .footer-nav li a {
+    color:#333;
+    font-weight:bold;
+  }
+  .footer-nav ul li a:hover {
+    color:#2f3f9c;
+  }
+}
+
+@media (min-width:1024px) {
+  .main-heading {
+    float:left;
+  }
+  .main-nav {
+    float:right;
+    padding-top:0.2rem;
+  }
+  .profile-pic {
+    float:right;
+    padding-top:1rem;
+    padding-left:1rem;
+  }
+  .head-info-text {
+    float:left;
+  }
+  .card {
+    width:30%;
+    margin-bottom:1.5rem;
+  }
+}
